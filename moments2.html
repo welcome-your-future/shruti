@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Video Moments</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="videos.css">
+ 
+</head>
+
+<body>
+
+  <div class="container">
+    <h2>Video Moments</h2>
+    <p class="subtitle">(Swipe to watch)</p>
+
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+
+        <!-- Video Card 1 -->
+        <div class="swiper-slide">
+          <div class="video-card">
+            <video src="images/1 (1).mp4" autoplay muted loop playsinline></video>
+          </div>
+        </div>
+
+        <!-- Video Card 2 -->
+        <div class="swiper-slide">
+          <div class="video-card">
+            <video src="images/1 (2).mp4" autoplay muted loop playsinline></video>
+          </div>
+        </div>
+
+      
+     
+    </div>
+  <!-- Video Card 3 -->
+       <div class="button-wrap">
+      <button class="gradient-btn"  onclick="window.location.href='message.html'">
+        <span class="mail-icon">✉️</span>
+        Open My Message
+      </button>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script>
+    new Swiper(".mySwiper", {
+      effect: "cards",
+      grabCursor: true,
+    });
+  </script>
+
+</body>
+</html>
